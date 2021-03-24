@@ -1,0 +1,11 @@
+{
+    "package": {
+        "test": "python3 -m pip install .",
+        "build": "python3 setup.py sdist bdist_wheel",
+        "publish": "python3 -m twine upload --repository pypi dist/*"
+    },
+    "docs": {
+        "install": "npm i -g docsify",
+        "test": "docsify serve docs"
+    }
+}
